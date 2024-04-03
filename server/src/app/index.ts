@@ -11,11 +11,7 @@ export async function initServer() {
      
   app.use(bodyParser.json())
 
-  prismaClient.user.create({
-    data:{
-        
-    }
-  })
+  
     const graphqlServer = new ApolloServer({
         typeDefs:`
              type Query {

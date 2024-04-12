@@ -6,7 +6,7 @@ import { FaHashtag } from "react-icons/fa";
 import { IoIosNotifications } from "react-icons/io";
 import FeedCard from "@/components/FeedCard";
 import { CiCircleMore } from "react-icons/ci";
-
+import { GoogleLogin} from '@react-oauth/google'
 
 
 interface TwitterSiderBarButton {
@@ -86,7 +86,10 @@ export default function Home() {
          <FeedCard />
          <FeedCard />
         </div>
-        <div className="col-span-3"></div>
+        <div className="col-span-3">
+          <GoogleLogin onSuccess={(cred)=> console.log(cred)
+          } />
+        </div>
       </div>
     </div>
   );

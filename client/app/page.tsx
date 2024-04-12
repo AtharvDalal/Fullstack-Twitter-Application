@@ -1,3 +1,7 @@
+'use client'
+
+
+
 import Image from "next/image";
 import React from "react";
 import { FaEnvelope, FaRegBookmark, FaRegMoneyBillAlt, FaTwitter } from "react-icons/fa";
